@@ -2,6 +2,11 @@ from selenium import webdriver
 
 browser = webdriver.Chrome()
 
-browser.get('https://roadmap.sh/')
+choice = input('please, choose a roadmap: ')
+
+print('you just chose the ' + choice + ' roadmap')
+
+browser.get('https://roadmap.sh/'+choice)
+
 while(True):
     pass
